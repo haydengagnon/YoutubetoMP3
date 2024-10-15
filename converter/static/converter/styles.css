@@ -1,0 +1,94 @@
+#spinner {
+    margin: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 20px;
+    gap: 50px;
+}
+
+.placeholder {
+    visibility: hidden;
+}
+
+.index-convert-mp4-to-mp3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#little-link {
+    padding: 10px;
+    border: solid;
+    border-radius: 20px;
+    border-width: 3px;
+    color: rgb(40, 180, 40);
+    border-color: rgb(40, 180, 40);
+    background-color: rgb(240, 255, 240);
+}
+
+#little-link:hover {
+    cursor: pointer;
+    background-color: rgb(230, 255, 230);
+    text-decoration: none;
+}
+
+.mp3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+.mp3-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+#profile-user {
+    font-weight: 600;
+}
+
+.play-audio {
+    text-align: right;
+}
+
+.play-pause-btn {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid rgb(0, 40, 160);
+    border-right: transparent;
+    height: 0px;
+    background-color: transparent;
+    translate: 0px -10px;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.play-pause-btn:focus {
+    outline: none;
+}
+
+#search-btn {
+    padding: 5px;
+    border: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    color: rgb(40, 180, 40);
+    border-color: rgb(40, 180, 40);
+    background-color: rgb(240, 255, 240);
+}
+
+#search-form {
+    text-align: center;
+}
+
+.search-input {
+    width: 60%;
+}
