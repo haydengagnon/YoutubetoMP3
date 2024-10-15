@@ -1,0 +1,23 @@
+{% extends "converter/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+    <div class="container mt-4">
+        <h2>Your MP3 is ready!</h2>
+
+        <div class="alert alert-success">
+            <p>Your file has been successfully converted.</p>
+            <a href="{{ mp3_file_url }}" class="btn btn-primary" download>Download MP3</a>
+        </div>
+
+        <h4>Would you like to share your MP3?</h4>
+        <form action="{% url 'post_mp3' mp3_file_url %}" method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="mp3_file_url" value="{{ mp3_file_url }}">
+            <input type="hidden" name="mp3_title" value="{{ mp3_title }}">
+            <button type="submit" class="btn btn-success">Post MP3</button>
+        </form>
+    </div>
+
+{% endblock %}
